@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-26T08:49:50.972Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="0Qam9ycbUMjnVKLyTDEb" version="23.1.6" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-26T08:49:59.217Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="CAflab7hcv3khbSvDBRf" version="23.1.6" type="github">
   <diagram name="Page-1" id="poI8-YUSSvHjqsaun8U3">
     <mxGraphModel dx="4947" dy="2246" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -62,10 +62,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="jdOp5vLoVfz0nc6eY_RX-8" value="Stream" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="1010" y="250" width="30" height="60" as="geometry" />
+          <mxGeometry x="2680" y="250" width="30" height="60" as="geometry" />
         </mxCell>
         <mxCell id="jdOp5vLoVfz0nc6eY_RX-9" value="Formateur&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="1010" y="360" width="30" height="60" as="geometry" />
+          <mxGeometry x="2680" y="360" width="30" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
