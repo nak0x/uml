@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-02-26T08:45:52.029Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="-PuSgbq91Y_uguSphBly" version="23.1.6" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-26T08:46:18.804Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="vZdqyTxeNsEiH5x1A0cX" version="23.1.6" type="github">
   <diagram name="Page-1" id="poI8-YUSSvHjqsaun8U3">
-    <mxGraphModel dx="2284" dy="754" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1479" dy="304" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -19,11 +19,17 @@
         <mxCell id="9J75G92YeQu_UmJGajJG-3" value="Dev" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
           <mxGeometry x="-200" y="250" width="30" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="jdOp5vLoVfz0nc6eY_RX-1" value="Vip&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="-200" y="360" width="30" height="60" as="geometry" />
+        </mxCell>
         <mxCell id="6pg-_Df3VazLDQJe-FIY-4" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="9J75G92YeQu_UmJGajJG-3" target="6pg-_Df3VazLDQJe-FIY-1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-90" y="300" as="sourcePoint" />
             <mxPoint x="-40" y="250" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="jdOp5vLoVfz0nc6eY_RX-2" value="Orga" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="-200" y="480" width="30" height="60" as="geometry" />
         </mxCell>
         <mxCell id="6pg-_Df3VazLDQJe-FIY-5" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="9J75G92YeQu_UmJGajJG-3" target="6pg-_Df3VazLDQJe-FIY-3">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -31,11 +37,17 @@
             <mxPoint x="-70" y="310" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="jdOp5vLoVfz0nc6eY_RX-3" value="Modo" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="-200" y="590" width="30" height="60" as="geometry" />
+        </mxCell>
         <mxCell id="6pg-_Df3VazLDQJe-FIY-6" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="9J75G92YeQu_UmJGajJG-3" target="6pg-_Df3VazLDQJe-FIY-2">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-130" y="440" as="sourcePoint" />
             <mxPoint x="-80" y="390" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="jdOp5vLoVfz0nc6eY_RX-7" value="Admin&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="-200" y="700" width="30" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
