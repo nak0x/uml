@@ -1,14 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2024-02-27T14:00:46.232Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="E51umO0HYiOADwiqnU_k" version="23.1.7" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-27T15:27:10.506Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="aRxBKsBDrcy5vlfIL_lt" version="23.1.7" type="github">
   <diagram name="Page-1" id="UKLv3boV3TVgQGzxHPeJ">
-    <mxGraphModel dx="1393" dy="1783" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1990" dy="2110" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="VcvPzuCNeLOe_9MtLZWD-3" value="Un client vous engage pour réaliser une base de données qui servira à calculer des statistiques sur&#xa;des matchs de football. En suivant les spécifications et besoins exprimés ci-dessous, dressez le&#xa;diagramme MCD de cette base de données :&#xa;- On devra insérer des joueurs dans la base de données avec leurs informations personnelles (nom,&#xa;prénom, genre, âge, nationalité, marié(e) (oui/non)).&#xa;- Il faudra renseigner des équipes sur le logiciel. Une équipe est toujours liée à un pays. Elle peut&#xa;également être liée à une ville, mais ce n’est pas obligatoire.&#xa;- On voudra savoir quel joueur fait parti de quelle équipe. Attention, il faudra pouvoir consulter la&#xa;composition d’une équipe dans la passé (si on veut voir qui était présent au sein de l’équipe de&#xa;France en 1998 par exemple).&#xa;- Malgré le fait qu’une équipe ne comporte que 11 joueurs sur le terrain, il faut pouvoir renseigner&#xa;plus de joueurs puisqu’il y a forcément des remplaçants au sein du club.&#xa;- Bien entendu, il faudra pouvoir consulter la liste des matchs :&#xa; Chaque match se voit opposer deux équipes différentes&#xa; Chaque match est arbitré par une personne&#xa; Un match peut-être nul en cas d’égalité, ou avoir un gagnant.&#xa; Pour chaque but, on veut savoir qui l’a marqué, et à quel temps il a été marqué.&#xa; On voudra également retrouver les différents cartons (rouge ou jaune) qui ont été donnés, et&#xa;à quel temps ils ont été donnés.&#xa;Question bonus (pas inclus dans la barème initialement, mais peut ajouter des points) :&#xa;Explique soit en français, soit directement à partir d’une requête SQL comment déterminer qui est&#xa;le gagnant d’un match." style="text;whiteSpace=wrap;fontSize=18;" vertex="1" parent="1">
-          <mxGeometry x="1217" y="19" width="814" height="327" as="geometry" />
-        </mxCell>
         <mxCell id="VcvPzuCNeLOe_9MtLZWD-4" value="Player" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="444" y="-195" width="272" height="210" as="geometry" />
+          <mxGeometry x="444" y="-177" width="272" height="210" as="geometry" />
         </mxCell>
         <mxCell id="VcvPzuCNeLOe_9MtLZWD-5" value="&lt;u&gt;id : AUTOINCR&lt;/u&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="VcvPzuCNeLOe_9MtLZWD-4">
           <mxGeometry y="30" width="272" height="30" as="geometry" />
@@ -22,10 +19,10 @@
         <mxCell id="VcvPzuCNeLOe_9MtLZWD-9" value="genre : INT" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="VcvPzuCNeLOe_9MtLZWD-4">
           <mxGeometry y="120" width="272" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="VcvPzuCNeLOe_9MtLZWD-10" value="age : INT" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="VcvPzuCNeLOe_9MtLZWD-4">
+        <mxCell id="VcvPzuCNeLOe_9MtLZWD-18" value="married : BOOL" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="VcvPzuCNeLOe_9MtLZWD-4">
           <mxGeometry y="150" width="272" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="VcvPzuCNeLOe_9MtLZWD-18" value="married : BOOL" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="VcvPzuCNeLOe_9MtLZWD-4">
+        <mxCell id="VcvPzuCNeLOe_9MtLZWD-124" value="birth_date : DATETIME" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="VcvPzuCNeLOe_9MtLZWD-4">
           <mxGeometry y="180" width="272" height="30" as="geometry" />
         </mxCell>
         <mxCell id="VcvPzuCNeLOe_9MtLZWD-19" value="Country" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -59,13 +56,16 @@
           <mxGeometry y="60" width="140" height="30" as="geometry" />
         </mxCell>
         <mxCell id="VcvPzuCNeLOe_9MtLZWD-31" value="Match" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1005" y="177" width="140" height="90" as="geometry" />
+          <mxGeometry x="1005" y="135" width="140" height="120" as="geometry" />
         </mxCell>
         <mxCell id="VcvPzuCNeLOe_9MtLZWD-32" value="&lt;u&gt;id : AUTOINCR&lt;/u&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="VcvPzuCNeLOe_9MtLZWD-31">
           <mxGeometry y="30" width="140" height="30" as="geometry" />
         </mxCell>
         <mxCell id="VcvPzuCNeLOe_9MtLZWD-33" value="score :&amp;nbsp; INT" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="VcvPzuCNeLOe_9MtLZWD-31">
           <mxGeometry y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VcvPzuCNeLOe_9MtLZWD-111" value="date : DATE" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="VcvPzuCNeLOe_9MtLZWD-31">
+          <mxGeometry y="90" width="140" height="30" as="geometry" />
         </mxCell>
         <mxCell id="VcvPzuCNeLOe_9MtLZWD-35" value="Arbitrator" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1005" y="427" width="140" height="90" as="geometry" />
@@ -77,16 +77,16 @@
           <mxGeometry y="60" width="140" height="30" as="geometry" />
         </mxCell>
         <mxCell id="VcvPzuCNeLOe_9MtLZWD-40" value="&lt;br&gt;type : INT" style="html=1;shape=mxgraph.sysml.useCaseExtPt;whiteSpace=wrap;align=center;" vertex="1" parent="1">
-          <mxGeometry x="500" y="432" width="160" height="80" as="geometry" />
+          <mxGeometry x="655" y="159" width="160" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="VcvPzuCNeLOe_9MtLZWD-41" value="gives" style="resizable=0;html=1;verticalAlign=middle;align=center;labelBackgroundColor=none;fontStyle=1;" connectable="0" vertex="1" parent="VcvPzuCNeLOe_9MtLZWD-40">
+        <mxCell id="VcvPzuCNeLOe_9MtLZWD-41" value="penalized" style="resizable=0;html=1;verticalAlign=middle;align=center;labelBackgroundColor=none;fontStyle=1;" connectable="0" vertex="1" parent="VcvPzuCNeLOe_9MtLZWD-40">
           <mxGeometry x="80" y="17" as="geometry" />
         </mxCell>
-        <mxCell id="VcvPzuCNeLOe_9MtLZWD-42" value="&lt;br&gt;date : DATETIME" style="html=1;shape=mxgraph.sysml.useCaseExtPt;whiteSpace=wrap;align=center;" vertex="1" parent="1">
-          <mxGeometry x="500" y="-395" width="160" height="80" as="geometry" />
+        <mxCell id="VcvPzuCNeLOe_9MtLZWD-42" value="" style="html=1;shape=mxgraph.sysml.useCaseExtPt;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+          <mxGeometry x="500" y="-387" width="160" height="64" as="geometry" />
         </mxCell>
         <mxCell id="VcvPzuCNeLOe_9MtLZWD-43" value="born" style="resizable=0;html=1;verticalAlign=middle;align=center;labelBackgroundColor=none;fontStyle=1;" connectable="0" vertex="1" parent="VcvPzuCNeLOe_9MtLZWD-42">
-          <mxGeometry x="80" y="17" as="geometry" />
+          <mxGeometry x="80" y="13.600000000000001" as="geometry" />
         </mxCell>
         <mxCell id="VcvPzuCNeLOe_9MtLZWD-44" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="VcvPzuCNeLOe_9MtLZWD-4" target="VcvPzuCNeLOe_9MtLZWD-42">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -194,11 +194,11 @@
             <mxPoint x="-8" y="-1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="VcvPzuCNeLOe_9MtLZWD-66" value="&lt;br&gt;is_winner : BOOL" style="html=1;shape=mxgraph.sysml.useCaseExtPt;whiteSpace=wrap;align=center;" vertex="1" parent="1">
-          <mxGeometry x="995" y="24" width="160" height="80" as="geometry" />
+        <mxCell id="VcvPzuCNeLOe_9MtLZWD-66" value="" style="html=1;shape=mxgraph.sysml.useCaseExtPt;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+          <mxGeometry x="995" y="11" width="160" height="66" as="geometry" />
         </mxCell>
         <mxCell id="VcvPzuCNeLOe_9MtLZWD-67" value="play" style="resizable=0;html=1;verticalAlign=middle;align=center;labelBackgroundColor=none;fontStyle=1;" connectable="0" vertex="1" parent="VcvPzuCNeLOe_9MtLZWD-66">
-          <mxGeometry x="80" y="17" as="geometry" />
+          <mxGeometry x="80" y="14.025" as="geometry" />
         </mxCell>
         <mxCell id="VcvPzuCNeLOe_9MtLZWD-88" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="VcvPzuCNeLOe_9MtLZWD-31" target="VcvPzuCNeLOe_9MtLZWD-66">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -211,7 +211,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="VcvPzuCNeLOe_9MtLZWD-90" value="" style="endArrow=none;html=1;rounded=0;exitX=0.145;exitY=0.145;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="VcvPzuCNeLOe_9MtLZWD-66" target="VcvPzuCNeLOe_9MtLZWD-24">
+        <mxCell id="VcvPzuCNeLOe_9MtLZWD-90" value="" style="endArrow=none;html=1;rounded=0;exitX=0.145;exitY=0.145;exitDx=0;exitDy=0;exitPerimeter=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="VcvPzuCNeLOe_9MtLZWD-66" target="VcvPzuCNeLOe_9MtLZWD-24">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="932" y="48" as="sourcePoint" />
             <mxPoint x="982" y="-2" as="targetPoint" />
@@ -219,28 +219,28 @@
         </mxCell>
         <mxCell id="VcvPzuCNeLOe_9MtLZWD-92" value="0,n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="VcvPzuCNeLOe_9MtLZWD-90">
           <mxGeometry x="-0.1066" relative="1" as="geometry">
-            <mxPoint y="5" as="offset" />
+            <mxPoint x="7" y="-1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="VcvPzuCNeLOe_9MtLZWD-91" value="" style="endArrow=none;html=1;rounded=0;entryX=0.855;entryY=0.145;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="VcvPzuCNeLOe_9MtLZWD-24" target="VcvPzuCNeLOe_9MtLZWD-66">
+        <mxCell id="VcvPzuCNeLOe_9MtLZWD-91" value="" style="endArrow=none;html=1;rounded=0;entryX=0.855;entryY=0.145;entryDx=0;entryDy=0;entryPerimeter=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="VcvPzuCNeLOe_9MtLZWD-24" target="VcvPzuCNeLOe_9MtLZWD-66">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1225" y="66" as="sourcePoint" />
             <mxPoint x="1275" y="16" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="VcvPzuCNeLOe_9MtLZWD-93" value="1,1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="VcvPzuCNeLOe_9MtLZWD-91">
+        <mxCell id="VcvPzuCNeLOe_9MtLZWD-93" value="0,n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="VcvPzuCNeLOe_9MtLZWD-91">
           <mxGeometry x="0.2893" relative="1" as="geometry">
-            <mxPoint y="-1" as="offset" />
+            <mxPoint x="-25" y="-1" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="VcvPzuCNeLOe_9MtLZWD-95" value="opponent" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="VcvPzuCNeLOe_9MtLZWD-91">
           <mxGeometry x="-0.2452" relative="1" as="geometry">
-            <mxPoint y="-1" as="offset" />
+            <mxPoint x="40" y="20" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="VcvPzuCNeLOe_9MtLZWD-110" value="recieve" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="VcvPzuCNeLOe_9MtLZWD-91">
           <mxGeometry x="-0.2452" relative="1" as="geometry">
-            <mxPoint x="-68" as="offset" />
+            <mxPoint x="-71" y="21" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="VcvPzuCNeLOe_9MtLZWD-96" value="" style="html=1;shape=mxgraph.sysml.useCaseExtPt;whiteSpace=wrap;align=center;" vertex="1" parent="1">
@@ -271,47 +271,83 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="VcvPzuCNeLOe_9MtLZWD-102" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="VcvPzuCNeLOe_9MtLZWD-40" target="VcvPzuCNeLOe_9MtLZWD-35">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="826" y="467" as="sourcePoint" />
-            <mxPoint x="875" y="595" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="VcvPzuCNeLOe_9MtLZWD-108" value="0,n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="VcvPzuCNeLOe_9MtLZWD-102">
-          <mxGeometry x="-0.0386" y="3" relative="1" as="geometry">
-            <mxPoint x="-1" y="3" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="VcvPzuCNeLOe_9MtLZWD-103" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="VcvPzuCNeLOe_9MtLZWD-40" target="VcvPzuCNeLOe_9MtLZWD-4">
+        <mxCell id="VcvPzuCNeLOe_9MtLZWD-103" value="" style="endArrow=none;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="VcvPzuCNeLOe_9MtLZWD-40" target="VcvPzuCNeLOe_9MtLZWD-4">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="430" y="264" as="sourcePoint" />
             <mxPoint x="480" y="214" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="580" y="199" />
+            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="VcvPzuCNeLOe_9MtLZWD-109" value="0,n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="VcvPzuCNeLOe_9MtLZWD-103">
           <mxGeometry x="-0.0352" relative="1" as="geometry">
-            <mxPoint as="offset" />
+            <mxPoint x="32" y="50" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="VcvPzuCNeLOe_9MtLZWD-104" value="ENUM : CARTONS&lt;br&gt;&lt;br&gt;JAUNE =&amp;gt; 1&lt;br&gt;ROUGE =&amp;gt; 2&lt;br&gt;BLANC =&amp;gt; 3" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;spacing=12;spacingTop=-6;" vertex="1" parent="1">
-          <mxGeometry x="651" y="62" width="250" height="199" as="geometry" />
+          <mxGeometry x="780" y="28" width="161" height="94" as="geometry" />
         </mxCell>
-        <mxCell id="VcvPzuCNeLOe_9MtLZWD-105" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="VcvPzuCNeLOe_9MtLZWD-104" target="VcvPzuCNeLOe_9MtLZWD-40">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="466" y="618" as="sourcePoint" />
-            <mxPoint x="465" y="538" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="VcvPzuCNeLOe_9MtLZWD-106" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="VcvPzuCNeLOe_9MtLZWD-40" target="VcvPzuCNeLOe_9MtLZWD-31">
+        <mxCell id="VcvPzuCNeLOe_9MtLZWD-106" value="" style="endArrow=none;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="VcvPzuCNeLOe_9MtLZWD-40" target="VcvPzuCNeLOe_9MtLZWD-31">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="801" y="263" as="sourcePoint" />
             <mxPoint x="851" y="213" as="targetPoint" />
-            <Array as="points" />
+            <Array as="points">
+              <mxPoint x="959" y="199" />
+              <mxPoint x="959" y="199" />
+            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="VcvPzuCNeLOe_9MtLZWD-107" value="1,1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="VcvPzuCNeLOe_9MtLZWD-106">
           <mxGeometry x="-0.0666" y="1" relative="1" as="geometry">
-            <mxPoint as="offset" />
+            <mxPoint x="-56" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VcvPzuCNeLOe_9MtLZWD-112" value="Un client vous engage pour réaliser une base de données qui servira à calculer des statistiques sur&lt;br style=&quot;border-color: var(--border-color); padding: 0px; margin: 0px; font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;des matchs de football. En suivant les spécifications et besoins exprimés ci-dessous, dressez le&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color); padding: 0px; margin: 0px; font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;diagramme MCD de cette base de données :&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color); padding: 0px; margin: 0px; font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;- On devra insérer des joueurs dans la base de données avec leurs informations personnelles (nom,&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color); padding: 0px; margin: 0px; font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;prénom, genre, âge, nationalité, marié(e) (oui/non)).&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color); padding: 0px; margin: 0px; font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;- Il faudra renseigner des équipes sur le logiciel. Une équipe est toujours liée à un pays. Elle peut&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color); padding: 0px; margin: 0px; font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;également être liée à une ville, mais ce n’est pas obligatoire.&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color); padding: 0px; margin: 0px; font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;- On voudra savoir quel joueur fait parti de quelle équipe. Attention, il faudra pouvoir consulter la&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color); padding: 0px; margin: 0px; font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;composition d’une équipe dans la passé (si on veut voir qui était présent au sein de l’équipe de&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color); padding: 0px; margin: 0px; font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;France en 1998 par exemple).&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color); padding: 0px; margin: 0px; font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;- Malgré le fait qu’une équipe ne comporte que 11 joueurs sur le terrain, il faut pouvoir renseigner&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color); padding: 0px; margin: 0px; font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;plus de joueurs puisqu’il y a forcément des remplaçants au sein du club.&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color); padding: 0px; margin: 0px; font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;- Bien entendu, il faudra pouvoir consulter la liste des matchs :&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color); padding: 0px; margin: 0px; font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt; Chaque match se voit opposer deux équipes différentes&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color); padding: 0px; margin: 0px; font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt; Chaque match est arbitré par une personne&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color); padding: 0px; margin: 0px; font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt; Un match peut-être nul en cas d’égalité, ou avoir un gagnant.&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color); padding: 0px; margin: 0px; font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt; Pour chaque but, on veut savoir qui l’a marqué, et à quel temps il a été marqué.&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color); padding: 0px; margin: 0px; font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt; On voudra également retrouver les différents cartons (rouge ou jaune) qui ont été donnés, et&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color); padding: 0px; margin: 0px; font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;à quel temps ils ont été donnés.&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color); padding: 0px; margin: 0px; font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Question bonus (pas inclus dans la barème initialement, mais peut ajouter des points) :&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color); padding: 0px; margin: 0px; font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Explique soit en français, soit directement à partir d’une requête SQL comment déterminer qui est&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color); padding: 0px; margin: 0px; font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;le gagnant d’un match.&lt;/span&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontSize=14;align=left;verticalAlign=top;spacing=20;spacingTop=-7;size=29;" vertex="1" parent="1">
+          <mxGeometry x="1237" y="-584" width="686" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="VcvPzuCNeLOe_9MtLZWD-115" value="&lt;br&gt;time : TIMESTAMP" style="html=1;shape=mxgraph.sysml.useCaseExtPt;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+          <mxGeometry x="655" y="265" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VcvPzuCNeLOe_9MtLZWD-116" value="scored" style="resizable=0;html=1;verticalAlign=middle;align=center;labelBackgroundColor=none;fontStyle=1;" connectable="0" vertex="1" parent="VcvPzuCNeLOe_9MtLZWD-115">
+          <mxGeometry x="80" y="17" as="geometry" />
+        </mxCell>
+        <mxCell id="VcvPzuCNeLOe_9MtLZWD-117" value="" style="endArrow=none;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="VcvPzuCNeLOe_9MtLZWD-4" target="VcvPzuCNeLOe_9MtLZWD-115">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="278" as="sourcePoint" />
+            <mxPoint x="330" y="228" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="580" y="305" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VcvPzuCNeLOe_9MtLZWD-120" value="0,n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="VcvPzuCNeLOe_9MtLZWD-117">
+          <mxGeometry x="0.1805" relative="1" as="geometry">
+            <mxPoint x="36" y="75" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VcvPzuCNeLOe_9MtLZWD-118" value="" style="endArrow=none;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="VcvPzuCNeLOe_9MtLZWD-115" target="VcvPzuCNeLOe_9MtLZWD-31">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="879" y="354" as="sourcePoint" />
+            <mxPoint x="929" y="304" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="886" y="304" />
+              <mxPoint x="886" y="199" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VcvPzuCNeLOe_9MtLZWD-119" value="0,n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="VcvPzuCNeLOe_9MtLZWD-118">
+          <mxGeometry x="-0.6795" y="1" relative="1" as="geometry">
+            <mxPoint x="-14" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VcvPzuCNeLOe_9MtLZWD-123" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="VcvPzuCNeLOe_9MtLZWD-40" target="VcvPzuCNeLOe_9MtLZWD-104">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="651" y="119" as="sourcePoint" />
+            <mxPoint x="701" y="69" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="735" y="81" />
+            </Array>
           </mxGeometry>
         </mxCell>
       </root>
