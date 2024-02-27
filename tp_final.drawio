@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-02-27T12:46:40.409Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="lte6Lch26nGF6--GNexc" version="23.1.7" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-27T12:52:14.964Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="c3zr1Vx22wwS9eW95AXr" version="23.1.7" type="github">
   <diagram name="Page-1" id="dID7BBgvKqJGilfwQHQu">
-    <mxGraphModel dx="3433" dy="1747" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+    <mxGraphModel dx="2500" dy="1209" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -291,21 +291,6 @@
         </mxCell>
         <mxCell id="xN4_sGe1Yz_WlacLz_tZ-135" value="UseCaseName" style="resizable=0;html=1;verticalAlign=middle;align=center;labelBackgroundColor=none;fontStyle=1;" connectable="0" vertex="1" parent="xN4_sGe1Yz_WlacLz_tZ-134">
           <mxGeometry x="80" y="17" as="geometry" />
-        </mxCell>
-        <mxCell id="xN4_sGe1Yz_WlacLz_tZ-136" value="" style="shape=ellipse;container=1;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;html=1;dashed=0;collapsible=0;" vertex="1" parent="1">
-          <mxGeometry x="637" y="689" width="180" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="xN4_sGe1Yz_WlacLz_tZ-137" value="UseCase1" style="html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rotatable=0;whiteSpace=wrap;" vertex="1" parent="xN4_sGe1Yz_WlacLz_tZ-136">
-          <mxGeometry width="180" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="xN4_sGe1Yz_WlacLz_tZ-138" value="" style="line;strokeWidth=1;fillColor=none;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;dashed=0;resizeWidth=1;" vertex="1" parent="xN4_sGe1Yz_WlacLz_tZ-136">
-          <mxGeometry x="9" y="30" width="162" height="10" as="geometry" />
-        </mxCell>
-        <mxCell id="xN4_sGe1Yz_WlacLz_tZ-139" value="extension points" style="text;html=1;align=center;verticalAlign=middle;rotatable=0;fillColor=none;strokeColor=none;whiteSpace=wrap;" vertex="1" parent="xN4_sGe1Yz_WlacLz_tZ-136">
-          <mxGeometry y="40" width="180" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="xN4_sGe1Yz_WlacLz_tZ-140" value="Extension point 1" style="text;html=1;align=left;verticalAlign=middle;rotatable=0;spacingLeft=25;fillColor=none;strokeColor=none;whiteSpace=wrap;" vertex="1" parent="xN4_sGe1Yz_WlacLz_tZ-136">
-          <mxGeometry y="70" width="180" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
